@@ -1,0 +1,249 @@
+{
+  "title": "Manulife Customer Service Agent Evaluation Dataset",
+  "description": "A comprehensive set of customer service scenarios for evaluating Azure AI Foundry agents",
+  "version": "1.0",
+  "createdDate": "2025-07-03",
+  "scenarios": [
+    {
+      "id": "scenario_001",
+      "category": "product_knowledge",
+      "input": "What's the difference between term and whole life insurance?",
+      "expectedOutput": "Term life insurance provides coverage for a specific period (typically 10, 20, or 30 years) with lower premiums but no cash value. It's good for temporary needs like income replacement during working years or mortgage protection. Whole life insurance provides permanent coverage for your entire life with higher premiums but includes a cash value component that grows over time. It's useful for estate planning, wealth transfer, and leaving a legacy. The key differences are duration (temporary vs. permanent), premiums (lower vs. higher), cash value (none vs. accumulates), and flexibility (expires vs. lifelong coverage).",
+      "evaluationCriteria": {
+        "accuracy": "Must correctly explain both types with key features",
+        "clarity": "Should use clear, non-technical language",
+        "completeness": "Should include duration, premium differences, cash value component, and ideal use cases"
+      },
+      "difficulty": "basic"
+    },
+    {
+      "id": "scenario_002",
+      "category": "customer_retention",
+      "input": "I want to cancel my policy immediately",
+      "expectedOutput": "I understand you'd like to cancel your policy. I'd be happy to assist with this process. Before we proceed, may I ask what's prompting your decision to cancel? Sometimes there might be alternatives that could address your concerns while maintaining your coverage. If you do wish to proceed with cancellation, I should mention that it might affect your future insurability and you'll lose the coverage benefits. To process the cancellation, you'll need to contact our customer service team at 1-888-MANULIFE or visit your online account portal. Would you like to discuss any alternatives or shall I provide the specific steps for cancellation?",
+      "evaluationCriteria": {
+        "empathy": "Should acknowledge the request respectfully",
+        "processAdherence": "Must explain cancellation process and consequences",
+        "retentionAttempt": "Should inquire about reasons and offer alternatives"
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "scenario_003",
+      "category": "claims_processing",
+      "input": "How do I file a claim for my dental procedure?",
+      "expectedOutput": "To file a claim for your dental procedure with Manulife, you have several options: 1) Use our mobile app for the fastest processing - just take a photo of your receipt and submit, 2) Submit online through the Manulife portal at manulife.ca/claims, 3) Mail the completed claim form with original receipts to our claims processing center. You'll need your policy/group number, member ID, and dental procedure details including receipts. For reimbursement, ensure your banking information is up-to-date. Claims should be submitted within 12 months of the service date. If you need help, contact our claims team at 1-800-268-3763.",
+      "evaluationCriteria": {
+        "accuracy": "Should include all submission methods",
+        "completeness": "Must list required documentation and timeframes",
+        "helpfulness": "Should provide contact information"
+      },
+      "difficulty": "basic"
+    },
+    {
+      "id": "scenario_004",
+      "category": "retirement_planning",
+      "input": "I'm 55 and want to start planning for retirement in the next 10 years. What Manulife products should I consider?",
+      "expectedOutput": "At 55 with retirement in 10 years, I'd suggest considering these Manulife retirement products: 1) Guaranteed Income Products like Manulife Income Plus that provide guaranteed income for life, 2) Segregated Funds that offer growth potential with principal guarantees at maturity, 3) Manulife RetirementPlus for both market growth and income guarantees, and 4) Group Retirement Solutions if available through your employer. It's important to balance growth opportunities with gradually increasing security as you approach retirement. I recommend scheduling a consultation with a Manulife financial advisor who can provide personalized advice based on your specific financial situation and retirement goals.",
+      "evaluationCriteria": {
+        "productKnowledge": "Should suggest appropriate pre-retirement products",
+        "relevance": "Recommendations must be age-appropriate",
+        "compliance": "Must include disclaimer about personal advice"
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "id": "scenario_005",
+      "category": "policy_details",
+      "input": "What does my health insurance cover for mental health services?",
+      "expectedOutput": "Manulife health insurance typically covers various mental health services, but coverage depends on your specific plan. Most plans include coverage for psychological services (therapists, counselors, psychologists), psychiatrist visits (covered by provincial health but extended benefits may apply), and sometimes Employee Assistance Programs offering short-term counseling. Coverage limits usually apply, such as annual maximums or per-visit caps. To check your specific coverage, please review your benefits booklet, log in to your Manulife account portal, or contact our customer service with your policy number. Would you like me to explain how to submit mental health claims once you've confirmed your coverage?",
+      "evaluationCriteria": {
+        "accuracy": "Should explain typical coverage while noting plan variations",
+        "verificationRequest": "Must ask for policy details for specific information",
+        "helpfulness": "Should offer guidance on finding specific coverage details"
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "scenario_006",
+      "category": "compliance",
+      "input": "Can you guarantee I'll make money if I invest in your equity funds?",
+      "expectedOutput": "I cannot guarantee that you'll make money by investing in Manulife's equity funds or any investment product. All investments carry risk, including the possible loss of principal. Equity funds specifically are subject to market volatility and economic factors that can affect performance. While historical data may show long-term growth trends, past performance is not a guarantee of future results. Instead of guarantees, I can provide information about our fund options, their historical performance, risk ratings, and management strategies. For personalized investment advice suited to your risk tolerance and financial goals, I recommend speaking with a licensed Manulife financial advisor who can provide guidance in accordance with regulatory requirements.",
+      "evaluationCriteria": {
+        "regulatory": "Must not provide guarantees about investment returns",
+        "risk": "Should explain investment risks clearly",
+        "referral": "Should suggest consultation with licensed advisor"
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "id": "scenario_007",
+      "category": "beneficiary_changes",
+      "input": "I need to change the beneficiary on my life insurance policy. My ex-spouse is still listed.",
+      "expectedOutput": "I understand you need to change the beneficiary on your life insurance policy. This is an important update, and I'm happy to guide you through the process. To change your beneficiary: 1) Complete a 'Change of Beneficiary' form, available on our website or through customer service, 2) Provide your policy number and personal identification, 3) Include the new beneficiary's full legal name and relationship to you, 4) Sign and date the form with a witness signature, 5) Submit it through your online account, by mail, or at a local Manulife office. If your current beneficiary designation is 'irrevocable,' you'll need your ex-spouse's signed consent. Would you like me to email you the form or connect you with a representative for additional assistance?",
+      "evaluationCriteria": {
+        "processAccuracy": "Must outline correct procedure",
+        "completeness": "Should mention irrevocable designation implications",
+        "helpfulness": "Should offer to provide forms or further assistance"
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "scenario_008",
+      "category": "technical_support",
+      "input": "The Manulife mobile app keeps crashing when I try to view my investment statements. Can you help?",
+      "expectedOutput": "I'm sorry to hear you're experiencing crashes with our mobile app when trying to view your investment statements. Let's troubleshoot this issue: 1) First, try closing and reopening the app, 2) Ensure your app is updated to the latest version in the App Store/Google Play Store, 3) Restart your device, 4) Check your internet connection, 5) Try clearing the app's cache in your device settings. If these steps don't resolve the issue, you can: 1) Access your statements through our website at manulife.ca instead, 2) Contact our technical support team at 1-888-MANULIFE (option 2 for technical assistance) who can provide more specific troubleshooting, 3) Provide details about your device model and operating system version which will help our team diagnose the problem. Would you like to try these steps, or would you prefer I connect you to our technical support team directly?",
+      "evaluationCriteria": {
+        "troubleshooting": "Should provide step-by-step troubleshooting advice",
+        "alternatives": "Must offer alternative ways to access information",
+        "escalation": "Should offer connection to technical support"
+      },
+      "difficulty": "basic"
+    },
+    {
+      "id": "scenario_009",
+      "category": "complaint_handling",
+      "input": "I've been on hold for 45 minutes trying to speak to someone about my claim. This is unacceptable service!",
+      "expectedOutput": "I sincerely apologize for the excessive wait time you experienced. You're absolutely right - 45 minutes is unacceptable, and I understand your frustration. This doesn't reflect the level of service we strive to provide at Manulife. I'd like to address your claim concern immediately. Could you please share your claim number or policy details so I can look into this right away? Additionally, I'd like to document this experience as a formal complaint to help improve our service. With your permission, I can arrange for a customer service manager to contact you directly to both resolve your claim issue and address your concerns about the wait time. What would be the best way to reach you?",
+      "evaluationCriteria": {
+        "acknowledgment": "Must validate the customer's frustration",
+        "apology": "Should provide sincere apology",
+        "resolution": "Must offer immediate assistance with claim",
+        "escalation": "Should offer management follow-up"
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "id": "scenario_010",
+      "category": "premium_payments",
+      "input": "I missed my insurance premium payment last week. Am I still covered?",
+      "expectedOutput": "Yes, you're still covered. Manulife policies include a grace period, typically 31 days from the due date, during which your coverage remains active even if a payment is missed. To maintain your coverage, please make the payment as soon as possible within this grace period. You can pay through our website, mobile app, by phone at 1-888-MANULIFE, or by setting up automatic payments to avoid future missed payments. If you're experiencing financial difficulties, we have options like premium deferrals or policy modifications that might help. Would you like assistance making your payment now or information about preventing missed payments in the future?",
+      "evaluationCriteria": {
+        "policyKnowledge": "Should explain grace period correctly",
+        "solutions": "Must provide payment options",
+        "helpfulness": "Should offer preventative suggestions"
+      },
+      "difficulty": "basic"
+    },
+    {
+      "id": "scenario_011",
+      "category": "life_events",
+      "input": "I just had a baby. Do I need to update my insurance policies?",
+      "expectedOutput": "Congratulations on your new baby! This is indeed an important time to review your insurance coverage. Here are some considerations: 1) Health Insurance: Add your child to your health benefits plan within 30 days of birth to ensure coverage from birth date, 2) Life Insurance: Consider increasing coverage to protect your family's financial future or adding a child rider to your existing policy, 3) Disability Insurance: Review if your income protection is sufficient with new financial responsibilities, 4) Education Savings: Consider setting up a Registered Education Savings Plan (RESP) with government grant benefits, 5) Estate Planning: Update your will and beneficiary designations. Manulife offers family coverage options specifically designed for new parents. Would you like to schedule a consultation with a Manulife advisor to review your specific situation and discuss appropriate coverage adjustments?",
+      "evaluationCriteria": {
+        "relevance": "Must address multiple insurance implications of having a child",
+        "completeness": "Should mention health, life, disability coverage and estate planning",
+        "actionable": "Should offer next steps or consultation"
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "scenario_012",
+      "category": "international_coverage",
+      "input": "Does my travel insurance cover medical emergencies if I'm going to Thailand for three weeks?",
+      "expectedOutput": "Manulife travel insurance typically covers medical emergencies in Thailand, but I'll need your specific policy details to confirm. Most Manulife travel policies include emergency medical coverage (hospital stays, doctor visits, prescriptions), medical evacuation if necessary, and 24/7 emergency assistance services. Coverage limits, exclusions, and deductibles vary by policy. Important considerations for Thailand: 1) Check if your policy has specific exclusions for activities like motorcycle riding or adventure sports, 2) Verify coverage duration matches your trip length, 3) Review coverage for tropical diseases, 4) Note any pre-existing condition limitations. Before traveling, download our Manulife TravelAid mobile app for emergency contact information and travel advisories. Please provide your policy number so I can verify your specific coverage details for Thailand.",
+      "evaluationCriteria": {
+        "verification": "Must ask for policy details for specific confirmation",
+        "relevance": "Should provide Thailand-specific considerations",
+        "completeness": "Should mention coverage types, exclusions, and resources"
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "scenario_013",
+      "category": "fraud_prevention",
+      "input": "I received an email asking for my Manulife account password to process a refund. Is this legitimate?",
+      "expectedOutput": "No, this is definitely not legitimate. Manulife will never email you asking for your account password, PIN, or full social insurance number. This appears to be a phishing attempt aimed at gaining access to your account. Please do not respond to the email or click any links it contains. To protect yourself: 1) Don't provide any personal information, 2) Don't click any links or download attachments, 3) Forward the suspicious email to fraud_prevention@manulife.com, 4) Delete the email from your inbox. If you've already responded to this email or provided information, please contact our fraud department immediately at 1-877-626-8543 to secure your account. Would you like me to connect you with our security team for additional guidance?",
+      "evaluationCriteria": {
+        "security": "Must clearly identify this as fraudulent",
+        "guidance": "Should provide specific protective actions",
+        "urgency": "Must convey appropriate level of concern"
+      },
+      "difficulty": "basic"
+    },
+    {
+      "id": "scenario_014",
+      "category": "product_comparison",
+      "input": "What's better for me - a TFSA or an RRSP?",
+      "expectedOutput": "Both TFSAs and RRSPs offer valuable benefits, but their advantages depend on your specific situation. Here's a comparison: TFSAs provide tax-free growth and withdrawals without tax consequences, contribution room restored after withdrawals, and no mandatory withdrawals in retirement. They're often better for short-term goals or if you expect higher retirement income. RRSPs offer tax deductions for contributions, tax-deferred growth, potential tax savings if you're in a lower tax bracket at retirement, and work well for long-term retirement planning or if you're currently in a high tax bracket. Your optimal choice depends on factors like your current/expected future income, investment timeline, and financial goals. While I can provide this general information, I recommend consulting with a Manulife financial advisor who can provide personalized advice based on your complete financial situation. Would you like to know more about specific Manulife TFSA or RRSP products?",
+      "evaluationCriteria": {
+        "accuracy": "Must correctly explain both account types",
+        "personalization": "Should note that optimal choice depends on individual factors",
+        "compliance": "Must include disclaimer about personalized advice"
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "id": "scenario_015",
+      "category": "policy_reinstatement",
+      "input": "My policy lapsed two months ago because I forgot to pay. Can I get it back?",
+      "expectedOutput": "Yes, it's possible to reinstate your lapsed policy since it's only been two months. Manulife typically allows reinstatement within 2 years of lapse, though the process becomes more complex after longer periods. To reinstate your policy, you'll need to: 1) Submit a reinstatement application, 2) Pay all missed premiums plus applicable interest, 3) Potentially provide a declaration of good health or undergo medical underwriting depending on how long the policy has been lapsed and the coverage amount. Since your policy lapsed recently, the process should be relatively straightforward. Would you like me to send you the reinstatement application or connect you with our policy services team who can guide you through the specific requirements for your policy?",
+      "evaluationCriteria": {
+        "accuracy": "Must explain reinstatement timeframes correctly",
+        "processKnowledge": "Should outline requirements for reinstatement",
+        "solutions": "Should offer practical next steps"
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "scenario_016",
+      "category": "digital_services",
+      "input": "How do I reset my password for the Manulife online account?",
+      "expectedOutput": "To reset your password for your Manulife online account, follow these steps: 1) Go to the Manulife login page at manulife.ca/login, 2) Click on 'Forgot your password?' or 'Reset password' link below the login fields, 3) Enter your username or email address associated with your account, 4) Choose your verification method (email, text message, or security questions), 5) Follow the prompts to create a new password that meets our security requirements (typically 8+ characters with a mix of letters, numbers, and special characters), 6) Log in with your new password. If you encounter any issues during this process, our technical support team is available at 1-888-MANULIFE, option 3. Is there anything specific about the password reset process you need help with?",
+      "evaluationCriteria": {
+        "accuracy": "Must provide correct reset procedure",
+        "clarity": "Should give clear step-by-step instructions",
+        "helpfulness": "Should offer support contact for issues"
+      },
+      "difficulty": "basic"
+    },
+    {
+      "id": "scenario_017",
+      "category": "group_benefits",
+      "input": "My employer just enrolled me in Manulife benefits. How do I find out what's covered?",
+      "expectedOutput": "Congratulations on your new benefits! To understand your Manulife group coverage: 1) Review your benefits booklet or enrollment package from your employer, which outlines all covered services, limits, and deductibles, 2) Register for your online account at manulife.ca/groupbenefits using your plan contract number and member ID from your benefits card, 3) Download the Manulife mobile app for convenient access to your coverage details, 4) Use the coverage comparison tool in your online account to see specific coverage for services like dental, vision, or paramedical, 5) Contact your company's HR department for plan-specific questions as coverage varies by employer. If you need assistance navigating your benefits, our support team is available at 1-800-268-6195. Would you like guidance on registering for your online account or information about submitting your first claim?",
+      "evaluationCriteria": {
+        "accuracy": "Must include multiple ways to access coverage information",
+        "relevance": "Should acknowledge employer-specific nature of group benefits",
+        "helpfulness": "Should offer next steps and support resources"
+      },
+      "difficulty": "basic"
+    },
+    {
+      "id": "scenario_018",
+      "category": "underwriting",
+      "input": "I have type 2 diabetes. Will that prevent me from getting life insurance?",
+      "expectedOutput": "Having type 2 diabetes doesn't automatically prevent you from getting life insurance with Manulife. Many people with well-managed diabetes qualify for coverage, though it may affect your premium rates or policy terms. Our underwriting process will consider several factors: 1) How well your diabetes is controlled (A1C levels), 2) Treatment compliance and management, 3) Duration since diagnosis, 4) Presence of any complications, 5) Other health factors and lifestyle considerations. Manulife offers several options that might be suitable: standard policies with adjusted premiums, simplified issue policies with fewer medical requirements, or guaranteed issue policies for those who may not qualify for traditional coverage. For the most accurate assessment, I recommend applying for coverage and going through the underwriting process or speaking with a Manulife advisor who specializes in coverage for clients with health considerations. Would you like information about specific policy options or to connect with an advisor?",
+      "evaluationCriteria": {
+        "accuracy": "Should explain that diabetes doesn't automatically disqualify",
+        "completeness": "Must outline factors considered in underwriting",
+        "helpfulness": "Should suggest appropriate policy options"
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "id": "scenario_019",
+      "category": "tax_information",
+      "input": "When will Manulife send my tax documents for my RRSP contributions?",
+      "expectedOutput": "Manulife issues tax receipts for RRSP contributions according to this schedule: 1) Contributions made during the first 60 days of the year (January 1 - March 1, 2025) that apply to the 2024 tax year will have receipts issued by March 15, 2025, 2) Contributions made during the rest of 2024 will have receipts issued by January 31, 2025. Your tax documents are delivered according to your communication preferences - either electronically through your online Manulife account or by mail. To check or change your delivery preferences, log into your account at manulife.ca or contact customer service. If you haven't received your tax receipt by these deadlines, please contact us at 1-888-MANULIFE with your policy number ready. Would you like me to verify the delivery method currently set for your tax documents?",
+      "evaluationCriteria": {
+        "accuracy": "Must provide correct tax document issuance timeline",
+        "completeness": "Should explain both electronic and mail delivery options",
+        "helpfulness": "Should offer to check current delivery preferences"
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "scenario_020",
+      "category": "foreign_residency",
+      "input": "I'm moving to the United States for work. What happens to my Manulife policies?",
+      "expectedOutput": "Your move to the United States will impact your Manulife policies differently depending on the type of coverage. For life insurance: Most permanent policies remain in force with the same terms, but premium payment methods may need updating with US banking information. For health and disability insurance: Canadian policies typically don't provide coverage while residing outside Canada, so you may need to explore termination options or conversion to a US-based policy. For investments: Regulatory restrictions may limit transactions or require special reporting; non-registered accounts may face different tax treatment. RRSP/TFSA accounts can remain open but with contribution restrictions. Important actions before moving: 1) Notify Manulife of your address change and US residency status, 2) Update beneficiary designations if needed, 3) Establish a method for premium payments from a US account, 4) Consult with both Canadian and US tax advisors about cross-border implications. Please contact our Cross-Border Services team at 1-888-MANULIFE (ext. 5463) for personalized guidance on your specific policies.",
+      "evaluationCriteria": {
+        "accuracy": "Must address implications for different policy types",
+        "completeness": "Should cover banking, tax, and regulatory considerations",
+        "actionable": "Must provide specific next steps and contact information"
+      },
+      "difficulty": "advanced"
+    }
+  ]
+}
