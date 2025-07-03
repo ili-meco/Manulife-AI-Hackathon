@@ -247,8 +247,8 @@ Design a system with three specialized agents:
 
 ### Azure AI Foundry Documentation
 - [Agent building guide](https://docs.microsoft.com/azure/ai-foundry/agents)
-- [Content safety configuration](https://docs.microsoft.com/azure/ai-foundry/content-safety)
-- [Model catalog reference](https://docs.microsoft.com/azure/ai-foundry/models)
+- [Content safety configuration](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/content-filter)
+- [Model catalog reference](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/foundry-models-overview)
 
 ### Best Practices
 1. **Agent Design**: Start simple, iterate based on feedback
