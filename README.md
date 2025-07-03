@@ -9,7 +9,6 @@ This repository contains comprehensive hands-on labs designed to take you from A
 ## 📋 Lab Structure Overview
 
 ### Day 1: AI Introduction and Prompt Engineering
-**Duration:** 2 hours  
 **Focus:** Fundamentals of AI and mastering prompt engineering  
 **Technologies:** Azure OpenAI, GPT models  
 **Key Learning:**
@@ -19,7 +18,6 @@ This repository contains comprehensive hands-on labs designed to take you from A
 - Industry-specific applications for financial services
 
 ### Day 2: Azure AI Foundry Deep Dive  
-**Duration:** 3 hours  
 **Focus:** Comprehensive platform exploration  
 **Technologies:** Azure AI Foundry, Model Catalog, Content Safety  
 **Key Learning:**
@@ -28,8 +26,7 @@ This repository contains comprehensive hands-on labs designed to take you from A
 - Evaluation frameworks and metrics
 - Content safety and compliance
 
-### Day 3: Microsoft Copilot Studio
-**Duration:** 3 hours  
+### Day 3: Microsoft Copilot Studio 
 **Focus:** Enterprise chatbot development with governance  
 **Technologies:** Copilot Studio, Power Platform, Enterprise Security  
 **Key Learning:**
@@ -39,7 +36,6 @@ This repository contains comprehensive hands-on labs designed to take you from A
 - Governance and best practices
 
 ### Day 4: RAG and Vector Search
-**Duration:** 3-4 hours  
 **Focus:** Advanced AI with enterprise knowledge integration  
 **Technologies:** Azure AI Search, Vector Embeddings, RAG Architecture  
 **Key Learning:**
@@ -83,117 +79,6 @@ By the end of these labs, participants will be able to:
 - Familiarity with REST APIs
 - JSON and Python/JavaScript basics (helpful but not required)
 - Understanding of business processes in financial services
-
----
-
-## 🏗️ Lab Environment Setup
-
-### Azure Resources Required
-
-```bash
-# Resource Group
-manulife-hackathon-rg
-
-# Azure OpenAI Service  
-manulife-openai-[yourname]
-- GPT-4o deployment
-- GPT-3.5-turbo deployment  
-- text-embedding-ada-002 deployment
-
-# Azure AI Search
-manulife-search-service (Standard tier)
-
-# Storage Account
-manulifedocs[random] (LRS, Data Lake Gen2 enabled)
-
-# AI Foundry Hub and Project
-manulife-ai-project
-```
-
-### Software Installation
-- Azure CLI (latest version)
-- Python 3.8+ with pip
-- VS Code with Azure extensions
-- Git for version control
-- Postman or similar API testing tool
-
----
-
-## 📚 Daily Lab Breakdown
-
-### Day 1: Foundation Building
-**Morning (1 hour):**
-- AI concepts and terminology
-- Azure OpenAI service setup
-- Basic prompt testing
-
-**Afternoon (1 hour):**
-- Advanced prompting techniques
-- Industry-specific scenarios
-- Evaluation and optimization
-
-### Day 2: Platform Mastery
-**Morning (1.5 hours):**
-- Azure AI Foundry tour
-- Model catalog exploration
-- Agent creation basics
-
-**Afternoon (1.5 hours):**
-- Content safety configuration
-- Evaluation framework setup
-- Performance monitoring
-
-### Day 3: Enterprise Development
-**Morning (1.5 hours):**
-- Copilot Studio fundamentals
-- Conversation design
-- Integration setup
-
-**Afternoon (1.5 hours):**
-- Security and governance
-- Multi-channel deployment
-- Production readiness
-
-### Day 4: Advanced Implementation
-**Morning (2 hours):**
-- Vector search setup
-- Document processing
-- RAG pipeline creation
-
-**Afternoon (1-2 hours):**
-- Quality assurance
-- Integration testing
-- Performance optimization
-
----
-
-## 🎖️ Success Criteria
-
-### Individual Achievement Levels
-
-**🥉 Bronze Level** - Basic Implementation
-- Complete all setup tasks
-- Successfully build basic AI agents
-- Demonstrate understanding of core concepts
-- Pass knowledge check quizzes
-
-**🥈 Silver Level** - Practical Application  
-- Implement advanced features
-- Create industry-specific solutions
-- Demonstrate security best practices
-- Complete integration challenges
-
-**🥇 Gold Level** - Innovation and Excellence
-- Develop creative solutions to business problems
-- Implement comprehensive monitoring and evaluation
-- Design scalable enterprise architectures
-- Present innovative use cases
-
-### Team Challenges
-- **Best Customer Experience**: Most user-friendly AI solution
-- **Most Innovative Use Case**: Creative application of AI capabilities
-- **Best Technical Implementation**: Robust, scalable architecture
-- **Compliance Excellence**: Best adherence to financial services regulations
 
 ---
 
@@ -242,60 +127,6 @@ manulife-ai-project
 - Verify resource naming conventions
 - Check subscription quotas and limits
 - Ensure proper resource dependencies
-
----
-
-## 📞 Support and Assistance
-
-### During the Hackathon
-- **Lab Facilitators**: Available during hands-on sessions
-- **Technical Support**: Dedicated support channels
-- **Slack/Teams**: Real-time Q&A and collaboration
-- **Office Hours**: Scheduled one-on-one help sessions
-
-### Post-Hackathon
-- **Documentation**: Comprehensive guides and references
-- **Community**: Ongoing discussion forums
-- **Updates**: Regular updates on new features and capabilities
-- **Follow-up Sessions**: Advanced workshops and deep dives
-
----
-
-## 🎉 What's Next?
-
-### Immediate Next Steps
-1. **Production Planning**: Move from lab to production
-2. **Security Review**: Comprehensive security assessment
-3. **User Training**: End-user adoption and training
-4. **Monitoring Setup**: Production monitoring and alerting
-
-### Long-term Opportunities
-- **Advanced AI Features**: Explore cutting-edge capabilities
-- **Integration Expansion**: Connect additional enterprise systems
-- **Custom Model Development**: Fine-tuning for specific use cases
-- **Innovation Projects**: Ongoing AI innovation initiatives
-
----
-
-## 📊 Evaluation and Feedback
-
-### Lab Assessment
-- **Technical Competency**: Hands-on skill demonstration
-- **Business Application**: Practical use case development
-- **Innovation**: Creative problem-solving approaches
-- **Collaboration**: Teamwork and knowledge sharing
-
-### Feedback Collection
-- Daily feedback forms
-- Exit surveys and interviews
-- Technical assessment rubrics
-- Peer evaluation components
-
-### Continuous Improvement
-- Regular content updates based on feedback
-- Industry trend integration
-- Technology advancement incorporation
-- Best practice evolution
 
 ---
 
