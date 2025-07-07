@@ -1,38 +1,38 @@
 {
-  "title": "Manulife Customer Service Agent Evaluation Dataset",
-  "description": "A comprehensive set of customer service scenarios for evaluating Azure AI Foundry agents",
+  "title": "Manulife HR Assistant Evaluation Dataset",
+  "description": "A comprehensive set of HR scenarios for evaluating Azure AI Foundry agents",
   "version": "1.0",
   "createdDate": "2025-07-03",
   "scenarios": [
     {
       "id": "scenario_001",
-      "category": "product_knowledge",
-      "input": "What's the difference between term and whole life insurance?",
-      "expectedOutput": "Term life insurance provides coverage for a specific period (typically 10, 20, or 30 years) with lower premiums but no cash value. It's good for temporary needs like income replacement during working years or mortgage protection. Whole life insurance provides permanent coverage for your entire life with higher premiums but includes a cash value component that grows over time. It's useful for estate planning, wealth transfer, and leaving a legacy. The key differences are duration (temporary vs. permanent), premiums (lower vs. higher), cash value (none vs. accumulates), and flexibility (expires vs. lifelong coverage).",
+      "category": "hr_policies",
+      "input": "What's the difference between vacation leave and personal days?",
+      "expectedOutput": "Vacation leave and personal days differ in several important ways. Vacation leave is accrued based on years of service (15-30 days annually), must be scheduled in advance (typically 2 weeks' notice for periods exceeding 3 days), can be carried over (up to 10 days annually), and is paid out upon termination. Personal days are fixed (3 days per year), can be taken with minimal notice for urgent personal matters, cannot be carried over to the next year, and are not paid out when employment ends. Vacation is intended for planned rest and relaxation, while personal days are designed for unexpected events or obligations that require attention during work hours.",
       "evaluationCriteria": {
         "accuracy": "Must correctly explain both types with key features",
         "clarity": "Should use clear, non-technical language",
-        "completeness": "Should include duration, premium differences, cash value component, and ideal use cases"
+        "completeness": "Should include entitlements, notice requirements, carryover policies, and payout differences"
       },
       "difficulty": "basic"
     },
     {
       "id": "scenario_002",
-      "category": "customer_retention",
-      "input": "I want to cancel my policy immediately",
-      "expectedOutput": "I understand you'd like to cancel your policy. I'd be happy to assist with this process. Before we proceed, may I ask what's prompting your decision to cancel? Sometimes there might be alternatives that could address your concerns while maintaining your coverage. If you do wish to proceed with cancellation, I should mention that it might affect your future insurability and you'll lose the coverage benefits. To process the cancellation, you'll need to contact our customer service team at 1-888-MANULIFE or visit your online account portal. Would you like to discuss any alternatives or shall I provide the specific steps for cancellation?",
+      "category": "employee_retention",
+      "input": "I want to resign from my position immediately",
+      "expectedOutput": "I understand you're considering resigning from your position. I'd be happy to guide you through this process. Before we proceed, may I ask what's prompting your decision to leave? Sometimes there might be alternatives that could address your concerns, such as a role change, flexible work arrangements, or addressing specific workplace issues. If you do wish to proceed with resignation, I should mention that our standard notice period is two weeks, though this may vary based on your position and contract terms. To formalize your resignation, you'll need to submit a written notice to your manager and HR. Would you like to discuss potential alternatives or shall I provide the specific steps for resignation?",
       "evaluationCriteria": {
         "empathy": "Should acknowledge the request respectfully",
-        "processAdherence": "Must explain cancellation process and consequences",
+        "processAdherence": "Must explain resignation process and notice period requirements",
         "retentionAttempt": "Should inquire about reasons and offer alternatives"
       },
       "difficulty": "intermediate"
     },
     {
       "id": "scenario_003",
-      "category": "claims_processing",
-      "input": "How do I file a claim for my dental procedure?",
-      "expectedOutput": "To file a claim for your dental procedure with Manulife, you have several options: 1) Use our mobile app for the fastest processing - just take a photo of your receipt and submit, 2) Submit online through the Manulife portal at manulife.ca/claims, 3) Mail the completed claim form with original receipts to our claims processing center. You'll need your policy/group number, member ID, and dental procedure details including receipts. For reimbursement, ensure your banking information is up-to-date. Claims should be submitted within 12 months of the service date. If you need help, contact our claims team at 1-800-268-3763.",
+      "category": "benefits_claims",
+      "input": "How do I submit a claim for health benefits reimbursement?",
+      "expectedOutput": "To submit a claim for health benefits reimbursement at Manulife, you have several options: 1) Use our mobile app for the fastest processing - just take a photo of your receipt and submit, 2) Submit online through the Manulife employee portal at benefits.manulife.com, 3) Mail the completed claim form with original receipts to our benefits processing center. You'll need your employee ID, plan group number, and treatment details including original receipts. For reimbursement, ensure your banking information is up-to-date in the benefits portal. Claims should be submitted within 12 months of the service date. If you need help, contact our benefits team at ext. 5500 or benefits@manulife.com.",
       "evaluationCriteria": {
         "accuracy": "Should include all submission methods",
         "completeness": "Must list required documentation and timeframes",
@@ -42,57 +42,57 @@
     },
     {
       "id": "scenario_004",
-      "category": "retirement_planning",
-      "input": "I'm 55 and want to start planning for retirement in the next 10 years. What Manulife products should I consider?",
-      "expectedOutput": "At 55 with retirement in 10 years, I'd suggest considering these Manulife retirement products: 1) Guaranteed Income Products like Manulife Income Plus that provide guaranteed income for life, 2) Segregated Funds that offer growth potential with principal guarantees at maturity, 3) Manulife RetirementPlus for both market growth and income guarantees, and 4) Group Retirement Solutions if available through your employer. It's important to balance growth opportunities with gradually increasing security as you approach retirement. I recommend scheduling a consultation with a Manulife financial advisor who can provide personalized advice based on your specific financial situation and retirement goals.",
+      "category": "career_development",
+      "input": "I'm interested in advancing my career at Manulife. What professional development opportunities are available?",
+      "expectedOutput": "For career advancement at Manulife, we offer several professional development paths: 1) Learning & Development Platform with over 5,000 courses in technical skills, leadership, and industry knowledge, 2) Tuition Reimbursement Program covering up to $5,000 annually for relevant degree programs and professional certifications, 3) Internal Mobility Program to explore roles across departments with our job shadowing and rotation opportunities, and 4) Mentorship Programs connecting you with senior leaders. Our Career Development Framework provides structured guidance with regular check-ins with your manager to create personalized growth plans. I recommend scheduling time with your manager to discuss your career aspirations and review the Internal Careers portal to see our development offerings.",
       "evaluationCriteria": {
-        "productKnowledge": "Should suggest appropriate pre-retirement products",
-        "relevance": "Recommendations must be age-appropriate",
-        "compliance": "Must include disclaimer about personal advice"
+        "resourceKnowledge": "Should suggest appropriate professional development resources",
+        "relevance": "Recommendations must be practical and actionable",
+        "completeness": "Must include both formal and informal development options"
       },
       "difficulty": "advanced"
     },
     {
       "id": "scenario_005",
-      "category": "policy_details",
-      "input": "What does my health insurance cover for mental health services?",
-      "expectedOutput": "Manulife health insurance typically covers various mental health services, but coverage depends on your specific plan. Most plans include coverage for psychological services (therapists, counselors, psychologists), psychiatrist visits (covered by provincial health but extended benefits may apply), and sometimes Employee Assistance Programs offering short-term counseling. Coverage limits usually apply, such as annual maximums or per-visit caps. To check your specific coverage, please review your benefits booklet, log in to your Manulife account portal, or contact our customer service with your policy number. Would you like me to explain how to submit mental health claims once you've confirmed your coverage?",
+      "category": "benefits_details",
+      "input": "What mental health support services are available to employees?",
+      "expectedOutput": "Manulife offers comprehensive mental health support services for employees. Our benefits package typically includes coverage for psychological services (therapists, counselors, psychologists) with annual coverage of up to $2,000, access to our Employee Assistance Program (EAP) providing 8 free confidential counseling sessions per issue annually, and our digital mental health platform offering self-guided programs and resources. We also provide mental health first aid training, regular wellness workshops, and flexible work arrangements to support work-life balance. Additional resources include our Mental Health Resource Hub on the intranet and Mental Health Employee Resource Group. To access these services, please review the benefits section on our employee portal or contact HR at ext. 5500. Would you like me to explain how to book an EAP session or access any specific mental health resource?",
       "evaluationCriteria": {
-        "accuracy": "Should explain typical coverage while noting plan variations",
-        "verificationRequest": "Must ask for policy details for specific information",
-        "helpfulness": "Should offer guidance on finding specific coverage details"
+        "accuracy": "Should explain available support services comprehensively",
+        "verificationRequest": "Must indicate how to access specific services",
+        "helpfulness": "Should offer guidance on accessing different types of support"
       },
       "difficulty": "intermediate"
     },
     {
       "id": "scenario_006",
-      "category": "compliance",
-      "input": "Can you guarantee I'll make money if I invest in your equity funds?",
-      "expectedOutput": "I cannot guarantee that you'll make money by investing in Manulife's equity funds or any investment product. All investments carry risk, including the possible loss of principal. Equity funds specifically are subject to market volatility and economic factors that can affect performance. While historical data may show long-term growth trends, past performance is not a guarantee of future results. Instead of guarantees, I can provide information about our fund options, their historical performance, risk ratings, and management strategies. For personalized investment advice suited to your risk tolerance and financial goals, I recommend speaking with a licensed Manulife financial advisor who can provide guidance in accordance with regulatory requirements.",
+      "category": "workplace_conduct",
+      "input": "How do I report workplace harassment?",
+      "expectedOutput": "Reporting workplace harassment at Manulife involves several confidential channels. First, if you feel comfortable, you can address the issue directly with the individual involved. If that's not appropriate or effective, report the incident to your immediate supervisor. Alternatively, you can contact Human Resources directly at hr.conduct@manulife.com or through our confidential Ethics Hotline at 1-800-MANULIFE-ETHICS, which allows for anonymous reporting. You can also report online at ethics.manulife.com. All reports are taken seriously and investigated promptly with as much confidentiality as possible. Our anti-harassment policy prohibits retaliation against anyone who reports concerns in good faith. Documentation of incidents, dates, times, and witnesses is helpful but not required. Would you like information about what happens after a report is made or what support resources are available to you during this process?",
       "evaluationCriteria": {
-        "regulatory": "Must not provide guarantees about investment returns",
-        "risk": "Should explain investment risks clearly",
-        "referral": "Should suggest consultation with licensed advisor"
+        "processAccuracy": "Must outline correct reporting procedure",
+        "confidentiality": "Should emphasize confidentiality of the process",
+        "supportive": "Should provide reassurance and additional support options"
       },
       "difficulty": "advanced"
     },
     {
       "id": "scenario_007",
-      "category": "beneficiary_changes",
-      "input": "I need to change the beneficiary on my life insurance policy. My ex-spouse is still listed.",
-      "expectedOutput": "I understand you need to change the beneficiary on your life insurance policy. This is an important update, and I'm happy to guide you through the process. To change your beneficiary: 1) Complete a 'Change of Beneficiary' form, available on our website or through customer service, 2) Provide your policy number and personal identification, 3) Include the new beneficiary's full legal name and relationship to you, 4) Sign and date the form with a witness signature, 5) Submit it through your online account, by mail, or at a local Manulife office. If your current beneficiary designation is 'irrevocable,' you'll need your ex-spouse's signed consent. Would you like me to email you the form or connect you with a representative for additional assistance?",
+      "category": "benefits_changes",
+      "input": "I need to update my benefits after getting married. How do I add my spouse to my health insurance?",
+      "expectedOutput": "Congratulations on your marriage! Adding your spouse to your health insurance is considered a qualifying life event, allowing you to make changes outside the annual enrollment period. You have 30 days from your marriage date to make this change. To add your spouse: 1) Log into the Employee Benefits Portal at benefits.manulife.com, 2) Select 'Life Event' and choose 'Marriage' from the dropdown menu, 3) Enter your marriage date and your spouse's personal information (full name, date of birth, and social insurance number), 4) Upload a copy of your marriage certificate or license, 5) Review and select the appropriate coverage level (e.g., employee + spouse), 6) Submit your changes for approval. Coverage typically begins on the first day of the month following your submission. Would you like me to walk you through the portal navigation or connect you with a benefits specialist for additional assistance?",
       "evaluationCriteria": {
-        "processAccuracy": "Must outline correct procedure",
-        "completeness": "Should mention irrevocable designation implications",
-        "helpfulness": "Should offer to provide forms or further assistance"
+        "processAccuracy": "Must outline correct procedure for benefits changes",
+        "completeness": "Should mention required documentation and deadlines",
+        "helpfulness": "Should offer further assistance options"
       },
       "difficulty": "intermediate"
     },
     {
       "id": "scenario_008",
       "category": "technical_support",
-      "input": "The Manulife mobile app keeps crashing when I try to view my investment statements. Can you help?",
-      "expectedOutput": "I'm sorry to hear you're experiencing crashes with our mobile app when trying to view your investment statements. Let's troubleshoot this issue: 1) First, try closing and reopening the app, 2) Ensure your app is updated to the latest version in the App Store/Google Play Store, 3) Restart your device, 4) Check your internet connection, 5) Try clearing the app's cache in your device settings. If these steps don't resolve the issue, you can: 1) Access your statements through our website at manulife.ca instead, 2) Contact our technical support team at 1-888-MANULIFE (option 2 for technical assistance) who can provide more specific troubleshooting, 3) Provide details about your device model and operating system version which will help our team diagnose the problem. Would you like to try these steps, or would you prefer I connect you to our technical support team directly?",
+      "input": "The employee benefits portal keeps crashing when I try to view my enrollment options. Can you help?",
+      "expectedOutput": "I'm sorry to hear you're experiencing issues with our employee benefits portal. Let's troubleshoot this problem: 1) First, try clearing your browser cache and cookies, 2) Ensure you're using a supported browser (Chrome, Firefox, Edge latest versions), 3) Try accessing from a different device if possible, 4) Check if you're connected to the company network or VPN if required, 5) Try using incognito/private browsing mode. If these steps don't resolve the issue, you can: 1) Access your benefits information through the HR mobile app as an alternative, 2) Contact our IT support desk at ext. 8000 or it.support@manulife.com who can provide more specific troubleshooting, 3) Provide screenshots of any error messages which will help our team diagnose the problem. As the enrollment deadline is approaching, if you need immediate assistance, our HR benefits team can help process your enrollment by phone at ext. 5500. Would you like to try these troubleshooting steps first, or would you prefer I connect you to our support team directly?",
       "evaluationCriteria": {
         "troubleshooting": "Should provide step-by-step troubleshooting advice",
         "alternatives": "Must offer alternative ways to access information",

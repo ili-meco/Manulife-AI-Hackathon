@@ -32,14 +32,14 @@ Ensure access to:
 
 ### Exercise 1: Building Your First Copilot (60 minutes)
 
-#### Task 1.1: Create Manulife Customer Service Copilot
+#### Task 1.1: Create Manulife HR Assistant Copilot
 1. Click **+ Create** → **New copilot**
 2. Choose **Build your own** → **Conversational**
 3. Configure:
-   - Name: `Manulife Customer Assistant`
+   - Name: `Manulife HR Assistant`
    - Language: English (Canada)
    - Website: `manulife.com`
-   - Industry: Financial Services
+   - Industry: Human Resources
 
 #### Task 1.2: Design Conversation Flow
 Create the main conversation structure:
@@ -47,45 +47,45 @@ Create the main conversation structure:
 ```
 Greeting Topic:
 - Trigger phrases: "Hello", "Hi", "Help", "Support"
-- Response: "Welcome to Manulife! I'm here to help you with your insurance and financial needs. How can I assist you today?"
+- Response: "Welcome to the Manulife HR Assistant! I'm here to help you with HR policies, benefits, and workplace information. How can I assist you today?"
 - Follow-up options:
-  * Policy Information
-  * Claims Support  
-  * Product Inquiries
-  * Account Services
+  * Benefits Information
+  * Leave Requests  
+  * Performance Reviews
+  * Career Development
 ```
 
 #### Task 1.3: Configure Core Topics
 Build these essential topics:
 
-**Topic 1: Policy Information**
+**Topic 1: Benefits Information**
 ```
 Trigger Phrases:
-- "policy details"
-- "my coverage"
-- "insurance information"
+- "benefits details"
+- "health coverage"
+- "benefits enrollment"
 - "what's covered"
 
 Conversation Flow:
-1. Ask for policy type (Life, Auto, Home, Health)
-2. Request policy number or customer ID
+1. Ask for benefit type (Health, Dental, Vision, Retirement)
+2. Request employee ID if needed
 3. Verify identity with security questions
-4. Provide policy summary
-5. Offer detailed information or connect to agent
+4. Provide benefits summary
+5. Offer detailed information or connect to HR specialist
 ```
 
-**Topic 2: Claims Support**
+**Topic 2: Leave Requests**
 ```
 Trigger Phrases:
-- "file a claim"
-- "claim status"
-- "accident report"
-- "claim help"
+- "request time off"
+- "vacation days"
+- "sick leave"
+- "parental leave"
 
 Conversation Flow:
-1. Determine claim type
-2. Check if it's a new claim or status inquiry
-3. Guide through appropriate process
+1. Determine leave type
+2. Check eligibility and available balance
+3. Guide through request process
 4. Collect necessary information
 5. Provide next steps and reference number
 ```

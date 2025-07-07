@@ -36,13 +36,13 @@ Create a container called `knowledge-base` and upload sample Manulife documents 
 #### Task 1.1: Review Sample Manulife Knowledge Base
 We've prepared realistic Manulife policy documents for the lab:
 
-**Sample Policy Documents:**
+**Sample HR Documents:**
 
-1. **Life Insurance Policy Guide (life-insurance-guide.md)**
-2. **Travel Insurance FAQ (travel-insurance-faq.md)**  
-3. **Investment Products Overview (investment-products.md)**
-4. **Claims Process Manual (claims-process.md)**
-5. **Customer Service Procedures (customer-service.md)**
+1. **Employee Handbook (employee-handbook.md)**
+2. **Benefits Enrollment FAQ (benefits-enrollment-faq.md)**  
+3. **Performance Review Guidelines (performance-review-guidelines.md)**
+4. **Leave Policy Manual (leave-policy-manual.md)**
+5. **Workplace Conduct Guidelines (workplace-conduct.md)**
 
 #### Task 1.2: Upload Documents to Storage
 1. Navigate to your storage account
@@ -86,38 +86,38 @@ We've prepared realistic Manulife policy documents for the lab:
 Try different search modes in the Search Explorer:
 
 1. **Keyword Search**: 
-   - Search query: `premium calculation life insurance`
+   - Search query: `parental leave policy eligibility`
    - Keep the default search settings
 
 2. **Vector Search**:
    - Enable **Semantic search**
    - Set **Semantic configuration** to default
-   - Search query: `How is my life insurance premium calculated?`
+   - Search query: `How many weeks of parental leave am I entitled to?`
 
 3. **Hybrid Search**:
    - Enable both **Keyword** and **Semantic** search
-   - Add filter: `category eq 'life-insurance'`
-   - Search query: `What factors determine my life insurance rate?`
+   - Add filter: `category eq 'benefits'`
+   - Search query: `What documentation do I need for extended leave?`
 
 #### Task 2.3: Test Vector Search Capabilities
 Test various search scenarios:
 
-**Test Query 1: Simple Product Question**
+**Test Query 1: Policy Question**
 ```
-Query: "What are the benefits of whole life insurance?"
-Expected: Relevant sections from life insurance documents
+Query: "What is our parental leave policy?"
+Expected: Relevant sections from leave policy documents
 ```
 
 **Test Query 2: Process Question**
 ```
-Query: "How do I file a travel insurance claim?"
-Expected: Step-by-step process from claims documentation
+Query: "How do I submit a request for time off?"
+Expected: Step-by-step process from leave policy manual
 ```
 
-**Test Query 3: Complex Comparison**
+**Test Query 3: Complex HR Question**
 ```
-Query: "Compare term life vs whole life insurance for a 35-year-old"
-Expected: Comparative information from multiple documents
+Query: "What are the steps in our performance improvement plan process?"
+Expected: Comparative information from performance review guidelines
 ```
 
 ### Exercise 3: RAG Implementation Using Azure OpenAI Chat Playground
@@ -143,45 +143,45 @@ Expected: Comparative information from multiple documents
 
 2. Edit the system message to create a Manulife customer service assistant:
 ```
-You are a helpful Manulife customer service assistant. Use the provided context from the knowledge base to answer customer questions accurately and helpfully.
+You are a helpful HR assistant for Manulife. Use the provided context from the knowledge base to answer employee questions about HR policies and procedures accurately and helpfully.
 
 Follow these guidelines:
 - Answer based primarily on the provided context
 - If information is not in the context, say so clearly
-- Provide specific references to policy sections when relevant
+- Provide specific references to HR policy sections when relevant
 - Maintain a professional, helpful tone
 - Include relevant policy numbers or document references when available
 
 When providing answers:
 1. Be concise but thorough
 2. Use bullet points for multi-step processes
-3. Offer to connect customers with specialists for complex questions
-4. Always cite the source documents you're using
+3. Offer to connect employees with HR specialists for complex questions
+4. Always cite the source HR documents you're using
 ```
 
 #### Task 3.3: Test the RAG System with Customer Queries
 Test your RAG implementation with these sample queries:
 
-1. **Simple Product Question**:
+1. **Benefits Question**:
    ```
-   "What are the benefits of whole life insurance?"
+   "What healthcare options are available to employees?"
    ```
    
-   Expected: The system should retrieve information from the life insurance policy guide.
+   Expected: The system should retrieve information from the benefits enrollment FAQ.
 
-2. **Process Question**:
+2. **Policy Question**:
    ```
-   "How do I file a travel insurance claim?"
+   "What is the procedure for reporting workplace harassment?"
    ```
    
-   Expected: The system should provide step-by-step instructions from the travel insurance FAQ.
+   Expected: The system should provide step-by-step instructions from the workplace conduct guidelines.
 
-3. **Complex Comparison**:
+3. **Process Question**:
    ```
-   "Compare term life vs whole life insurance for a 35-year-old"
+   "How are annual performance reviews conducted?"
    ```
    
-   Expected: The system should compile information from multiple documents.
+   Expected: The system should compile information from the performance review guidelines.
 
 #### Task 3.4: Use Evaluation Dataset for Quality Assessment
 Use the evaluation dataset from Day 2 to systematically test your RAG system:
@@ -192,7 +192,7 @@ Use the evaluation dataset from Day 2 to systematically test your RAG system:
    ```
 
 2. Filter for relevant scenarios:
-   - Focus on `product_knowledge`, `claims_processing`, `policy_details`, and `retirement_planning` categories
+   - Focus on `hr_policies`, `benefits_information`, `leave_requests`, and `workplace_conduct` categories
    - Try 3-5 scenarios from each category
 
 3. For each test scenario:
@@ -237,22 +237,22 @@ Use the evaluation dataset from Day 2 to systematically test your RAG system:
 
 #### Task 4.3: Create Custom Topics for Document-Based Answers
 1. Go to **Topics** in the Copilot Studio menu
-2. Create a new topic called "Policy Information"
+2. Create a new topic called "HR Policies Information"
 3. Add trigger phrases:
-   - "Tell me about life insurance"
-   - "How do travel insurance claims work"
-   - "What investment products do you offer"
-   - "Explain the claims process"
+   - "Tell me about parental leave"
+   - "How do I request time off"
+   - "What health benefits do we have"
+   - "Explain the performance review process"
 
 4. In the authoring canvas, add a **Message** node with this text:
 ```
-I'll check our policy documentation for you.
+I'll check our HR documentation for you.
 
-Based on Manulife's policy documentation, here's what I found:
+Based on Manulife's HR documentation, here's what I found:
 
 {{GetPolicyInfo.response}}
 
-This information comes from our official policy documents. Would you like me to explain any specific part in more detail?
+This information comes from our official HR policies. Would you like me to explain any specific part in more detail?
 ```
 
 5. Add a flow step using the **Get data from AI Search** action:
